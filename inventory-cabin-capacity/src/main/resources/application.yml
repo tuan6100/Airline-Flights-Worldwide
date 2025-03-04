@@ -1,0 +1,46 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: inventory-cabin-capacity
+
+  threads:
+    virtual:
+      enabled: true
+
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+
+  liquibase:
+    enabled: false
+    change-log: classpath:/db/changelog/db.changelog-master.json
+
+security:
+  jwt:
+    secret: "AirlineFlightsWorldwideSecretSecurityTokenKeyForJwtValidation2026"
+    expiration: 86400
+  seed:
+    admin:
+      email: "admin@airline.com"
+      password: "AdminPassword123!"
+      name: "System Administrator"
+      phone: "+12025550101"
+    crew:
+      email: "crew@airline.com"
+      password: "CrewPassword123!"
+      name: "Senior Captain Smith"
+      phone: "+12025550102"
+    groundstaff:
+      email: "groundstaff@airline.com"
+      password: "GroundStaff123!"
+      name: "Gate Agent Elena"
+      phone: "+12025550103"
+    customer:
+      email: "customer@airline.com"
+      password: "CustomerPassword123!"
+      name: "John Doe"
+      phone: "+12025550104"
