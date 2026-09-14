@@ -1,0 +1,12 @@
+cacheConnection: false
+cacheTableNames: false
+leakHunter: true
+caseInsensitiveStrategy: LOWERCASE
+
+properties:
+  batchedStatements:  true
+  qualifiedTableNames: true
+  schema: bookings
+  replacers: [!!com.github.database.rider.core.replacers.IncludeReplacer {}]
+  caseSensitiveTableNames: true
+
