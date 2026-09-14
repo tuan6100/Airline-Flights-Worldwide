@@ -1,4 +1,4 @@
-# Airline Flights Worldwide Management System
+# Airline Flights Worldwide System
 
 ## Key concepts
 
